@@ -1,0 +1,35 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+.watch-mark-overlay {
+  color: white !important;
+  background-color: #99adb8;
+  padding: 2px;
+  border-radius: 4.5px;
+  margin-top: 4px;
+  border-top-left-radius: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  &.hidden {
+    opacity: 0;
+    &::before {
+      opacity: 0;
+    }
+  }
+  &::before {
+    opacity: 1;
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 0;
+    border: 4px solid;
+    border-color: transparent transparent #99adb8 #99adb8;
+  }
+}
+.watch-mark-highlight .region,
+atom-text-editor::shadow .watch-mark-highlight .region {
+  background-color: red;
+  opacity: 0.5;
+}
