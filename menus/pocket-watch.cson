@@ -5,7 +5,8 @@
     'submenu': [
       'label': 'Pocket watch'
       'submenu': [
-        { 'label': 'Connect', 'command': 'pocket-watch:connect' }
+        { 'label': 'Connect', 'command': 'pocket-watch:connect' },
+        { 'label': 'Watch Current File', 'command': 'pocket-watch:watchFile' },
       ]
     ]
   }
