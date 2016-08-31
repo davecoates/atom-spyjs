@@ -1,7 +1,7 @@
 {
   "name": "pocket-watch",
   "main": "./lib/main",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Watch javascript code for changes",
   "keywords": [],
   "activationCommands": {
@@ -14,10 +14,12 @@
   },
   "dependencies": {
     "circular-json": "^0.3.0",
-    "react": "^0.14.7",
-    "react-dom": "^0.14.7",
-    "react-for-atom": "^0.14.7-0",
-    "react-json-tree": "^0.6.1",
+    "lodash.throttle": "^4.1.1",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "react-for-atom": "^15.2.1-0",
+    "value-mirror": "^0.0.8",
+    "value-mirror-inspector": "^0.0.6",
     "ws": "^1.0.1"
   },
   "devDependencies": {
