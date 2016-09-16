@@ -1,8 +1,8 @@
 {
-  "name": "pocket-watch",
+  "name": "atom-spyjs",
   "main": "./lib/main",
   "version": "0.0.1",
-  "description": "Watch javascript code for changes",
+  "description": "LightTable style watches for JS in Atom",
   "keywords": [],
   "activationEvents": ["atom-plugin:run"],
   "consumedServices": {
@@ -12,7 +12,7 @@
       }
     }
   },
-  "repository": "https://github.com/davecoates/pocket-watch",
+  "repository": "https://github.com/davecoates/atom-spyjs",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

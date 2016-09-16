@@ -3,7 +3,7 @@
 // See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
 // for a full listing of what's available.
 @import "ui-variables";
-.watch-mark-overlay {
+.spyjs-overlay {
   padding: 0 0.2em;
   color: white;;
   white-space: nowrap;
@@ -17,7 +17,7 @@
     }
 }
 
-.watch-mark-ui {
+.spyjs-ui {
   // We translate the child of this div as the marker sits on the line under
   // where we want it. Setting the height of this div to 0 stops it covering
   // text and stopping clicks on the text (ie. there's nothing visible as
@@ -25,33 +25,8 @@
   // and so catches any clicks)
   height: 0;
 }
-.watch-mark-overlay_LOL {
-  color: white;
-  background-color: #99adb8;
-  pre { background-color: #99adb8; color: white; }
-  padding: 2px;
-  border-radius: 4.5px;
-  margin-top: 4px;
-  border-top-left-radius: 0;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-  &.hidden {
-    opacity: 0;
-    &::before {
-      opacity: 0;
-    }
-  }
-  &::before {
-    opacity: 1;
-    content: "";
-    position: absolute;
-    top: -4px;
-    left: 0;
-    border: 4px solid;
-    border-color: transparent transparent #99adb8 #99adb8;
-  }
-}
-.watch-mark-highlight,
-atom-text-editor::shadow .watch-mark-highlight {
+.spyjs-highlight,
+atom-text-editor::shadow .spyjs-highlight {
   .region {
     border-width: 0 0 1px 0;
     border-style: dashed;
@@ -59,8 +34,8 @@ atom-text-editor::shadow .watch-mark-highlight {
     opacity: 0.5;
   }
 }
-.watch-mark-selection .region,
-atom-text-editor::shadow .watch-mark-selection .region {
+.spyjs-selection .region,
+atom-text-editor::shadow .spyjs-selection .region {
   background-color: @overlay-background-color;
   opacity: 0.3;
   mix-blend-mode: overlay;
@@ -73,9 +48,9 @@ atom-text-editor::shadow .watch-mark-selection .region {
     border-bottom-left-radius: 4px;
   }
 }
-.voyeur-tile-icon {
+.spyjs-tile-icon {
   opacity: 0.5;
-  &.voyeur-tile-icon-connected {
+  &.spyjs-tile-icon-connected {
     opacity: 1;
     color: @text-color-info;
   }
