@@ -3,10 +3,10 @@
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'Pocket watch'
+      'label': 'Spyjs'
       'submenu': [
-        { 'label': 'Connect', 'command': 'pocket-watch:connect' },
-        { 'label': 'Watch Current File', 'command': 'pocket-watch:watchFile' },
+        { 'label': 'Connect', 'command': 'spyjs:connect' },
+        { 'label': 'Add Spy', 'command': 'spyjs:watchFile' },
       ]
     ]
   }
@@ -15,6 +15,6 @@
   'atom-text-editor': [
     {
       'label': 'Connect'
-      'command': 'pocket-watch:connect'
+      'command': 'spyjs:connect'
     }
   ]
