@@ -4,8 +4,13 @@
   "version": "0.0.1",
   "description": "Watch javascript code for changes",
   "keywords": [],
-  "activationCommands": {
-    "atom-workspace": "pocket-watch:connect"
+  "activationEvents": ["atom-plugin:run"],
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
   },
   "repository": "https://github.com/davecoates/pocket-watch",
   "license": "MIT",
@@ -13,12 +18,14 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "classnames": "^2.2.5",
     "lodash.throttle": "^4.1.1",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
     "react-for-atom": "^15.2.1-0",
-    "value-mirror": "^0.0.8",
-    "value-mirror-inspector": "^0.0.6",
+    "react-icons": "^2.2.1",
+    "value-mirror": "^0.0.9",
+    "value-mirror-inspector": "^0.0.9",
     "ws": "^1.0.1"
   },
   "devDependencies": {
