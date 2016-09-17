@@ -5,7 +5,7 @@
   "globals": {
     "atom": true,
     },
-  "extends": "airbnb/base",
+  "extends": "airbnb",
   "rules": {
     "indent": [2, 4, {"SwitchCase": 1}],
     "eqeqeq": [2, "smart"],

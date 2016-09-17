@@ -1,5 +1,5 @@
 {
-  "name": "atom-spyjs",
+  "name": "spyjs",
   "main": "./lib/main",
   "version": "0.0.1",
   "description": "LightTable style watches for JS in Atom",
